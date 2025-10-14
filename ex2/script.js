@@ -17,6 +17,14 @@ class AlunoController {
         this.tbody = document.getElementById('tabela');
     }
 
+    isAprovado(nota) {
+        return nota >= 7;
+    }
+
+    toString() {
+        return `Aluno: ${this.nome}, Idade: ${this.idade}, Curso: ${this.curso}, Nota Final: ${this.notaFinal}, Aprovado: ${this.isAprovado(this.notaFinal) ? 'Sim' : 'Não'}`;
+    }
+
     cadastrar(e) {
         e.preventDefault();
         const nome = document.getElementById('nome').value;
