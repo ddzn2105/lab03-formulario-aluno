@@ -6,22 +6,32 @@
     <title>DevTech Academy</title>
 </head>
 <body>
-    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
-    <input type="number" id="idade" name="idade" placeholder="Digite sua idade" required>
-    <select id="curso" name="curso" required>
-        <option value="JavaScript">JavaScript</option>
-        <option value="Python">Python</option>
-        <option value="Java">Java</option>
-    </select>
-    <input type="number" id="notaFinal" name="notaFinal" placeholder="Digite sua nota final" required>
-    <button id="cadastrar" type="button" onclick="cadastrar()">Cadastrar</button>
-    <table>
+    <a href="/index.html">Home</a>
+    <hr>
+    <h4>Formulário</h4>
+    <form action="" method="post">
+        <label for="idNome">Nome: </label> <br>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required> <br>
+        
+        <label for="idIdade">Idade: </label> <br>
+        <input type="number" id="idade" name="idade" placeholder="Digite sua idade" required> <br>
+        
+        <label for="idCurso">Curso: </label> <br>
+        <select id="curso" name="curso" required> <br>
+            <option value="JavaScript">JavaScript</option>
+            <option value="Python">Python</option>
+            <option value="Java">Java</option>
+        </select> <br>
+        <label for="idNotaFinal">Nota Final: </label> <br>
+        <input type="number" id="notaFinal" name="notaFinal" placeholder="Digite sua nota final" required> <br>
+    <button id="cadastrar" type="submit" onclick="controller.cadastrar(event)">Cadastrar</button>
+    <table border =".1" cellpadding="10" cellspacing="0">
         <thead>
             <tr>
-                <th>Nome</th>
-                <th>Idade</th>
-                <th>Curso</th>
-                <th>Nota Final</th>
+                <th bgcolor="gray" width="130">Nome</th>
+                <th bgcolor="gray" width="130">Idade</th>
+                <th bgcolor="gray" width="130">Curso</th>
+                <th bgcolor="gray" width="130">Nota Final</th>
             </tr>
         </thead>
         <tbody id="tabela">
