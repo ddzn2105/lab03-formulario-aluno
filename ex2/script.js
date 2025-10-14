@@ -1,10 +1,10 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const button = document.getElementById('cadastrar');
-    button.addEventListener('click', function() {
-        const nome = document.getElementById('nome').value;
-        const idade = document.getElementById('idade').value;
-        const curso = document.getElementById('curso').value;
-        const notaFinal = document.getElementById('notaFinal').value;
+let lista = [];
+
+function cadastrar() {
+    const nome = document.getElementById('nome').value;
+    const idade = document.getElementById('idade').value;
+    const curso = document.getElementById('curso').value;
+    const notaFinal = document.getElementById('notaFinal').value;
         lista = [];
         lista.push({ nome, idade, curso, notaFinal });
         
@@ -46,6 +46,4 @@ document.addEventListener('DOMContentLoaded', function() {
             tr.appendChild(tdBtn);
             tbody.appendChild(tr);
         });
-    });
-    
-});
+    };
