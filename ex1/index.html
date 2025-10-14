@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevTech Academy</title>
+</head>
+<body>
+    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+    <input type="number" id="idade" name="idade" placeholder="Digite sua idade" required>
+    <select id="curso" name="curso" required>
+        <option value="JavaScript">JavaScript</option>
+        <option value="Python">Python</option>
+        <option value="Java">Java</option>
+    </select>
+    <input type="number" id="notaFinal" name="notaFinal" placeholder="Digite sua nota final" required>
+    <button id="cadastrar" type="button" onclick="cadastrar()">Cadastrar</button>
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+                <th>Curso</th>
+                <th>Nota Final</th>
+            </tr>
+        </thead>
+        <tbody id="tabela">
+        </tbody>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
